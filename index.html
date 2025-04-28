@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TV T&amp;M</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Rétro YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tv-frame">
+    <div class="screen">
+      <iframe id="youtubePlayer"
+        width="640" height="360"
+        src="https://www.youtube.com/embed/videoseries?list=PLRn9e20J8R77cue91KuTJCeYNpXeGuc6n&autoplay=1&mute=1&loop=1"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+
+      <canvas id="tvNoise"></canvas>
+
+      <div id="flash"></div>
+      <div id="whiteDot"></div> <!-- Point blanc ajouté -->
+
+    </div>
+
+    <div class="controls">
+      <button id="powerButton">Power</button>
+      <div class="fake-buttons">
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+      </div>
+    </div>
+
+    <div class="tv-stand"></div>
+  </div>
+
+  <audio id="noiseSound" src="noise.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
